@@ -67,7 +67,7 @@
             "echo -n OAUTH_PRIVATE_KEY > storage/oauth-private.key", 
             "echo -n OAUTH_PUBLIC_KEY > storage/oauth-public.key",
             "php artisan migrate:refresh --force",
-            "php artisan passport:migrate" 
+            "php artisan passport:install" 
         ]
     }
 }
