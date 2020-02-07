@@ -1,0 +1,1 @@
+check out https://laravel.com/docs/passport#deploying-passport when deployin the doc
