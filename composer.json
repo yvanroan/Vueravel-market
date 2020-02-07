@@ -66,7 +66,7 @@
             "chmod -R 775 storage", 
             "echo -n OAUTH_PRIVATE_KEY > storage/oauth-private.key", 
             "echo -n OAUTH_PUBLIC_KEY > storage/oauth-public.key",
-            "php artisan migrate:refresh" 
+            "php artisan migrate:refresh --force" 
         ]
     }
 }
