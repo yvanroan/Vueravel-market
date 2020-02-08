@@ -65,7 +65,7 @@
             "php artisan clear-compiled", 
             "chmod -R 775 bootstrap/cache",
             "echo -n $OAUTH_PRIVATE_KEY > storage/oauth-private.key", 
-            "echo -n $OAUTH_PUBLIC_KEY > storage/oauth-public.key"
+            "echo -n $OAUTH_PUBLIC_KEY > storage/oauth-public.key",
             "chmod -R 775 storage", 
             "php artisan migrate:refresh --force",
             "php artisan passport:install" 
