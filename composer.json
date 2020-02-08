@@ -19,6 +19,7 @@
     "require-dev": {
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
+        "heroku/heroku-buildpack-php": "*",
         "laravel/ui": "^1.1",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
@@ -63,10 +64,6 @@
         ],
         "post-install-cmd": [ 
             "php artisan clear-compiled", 
-            "chmod -R 775 bootstrap/cache",
-            "echo -n '${OAUTH_PRIVATE_KEY}' > storage/oauth-private.key", 
-            "echo -n '${OAUTH_PUBLIC_KEY}' > storage/oauth-public.key",
-            "chmod -R 775 storage", 
             "php artisan migrate:refresh --force",
             "php artisan passport:install" 
         ]
