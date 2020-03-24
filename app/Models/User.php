@@ -9,6 +9,8 @@ use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
 {
+    public $timestamps = false;
+    
     use HasApiTokens, Notifiable;
 
     /**
@@ -20,21 +22,4 @@ class User extends Authenticatable
         'username', 'firstname', 'lastname', 'email', 'password',
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
-
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
 }

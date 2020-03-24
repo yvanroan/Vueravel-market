@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth; 
 use Symfony\Component\HttpFoundation\Response;
 use App\Http\Resources\Profile\ProfileResource;
+use App\Constants\Message;
 use Validator;
 
 class AuthController extends Controller {
@@ -22,32 +23,39 @@ class AuthController extends Controller {
 		        'c_password' => 'required|same:password', 
 		]);   
 
-		if ($validator->fails()) {          
-		    return response()->json(['error'=>$validator->errors()], Response::HTTP_UNPROCESSABLE_ENTITY);
+		if ($validator->fails()) {
+		    return response()->error(Response::HTTP_UNPROCESSABLE_ENTITY, Message::VALIDATION_ERROR,$validator->errors());
 		}
 
 		$input = $request->all();  
 		$input['password'] = bcrypt($input['password']);
-		$user = User::create($input); 
-		$data['token'] =  $user->createToken('vueravelmarkettoken')->accessToken;
-		return response()->json(['data'=>$data], Response::HTTP_CREATED); 
+		$user = User::create($input);
+		return response()->success(Response::HTTP_CREATED, Message::SUCCESSFULL_AUTH, [
+			'username' => $input['username'] ,
+			'firstname' => $input['firstname'] ,
+			'lastname' => $input['lastname'] ,
+			'token' => $user->createToken('vueravelmarkettoken')->accessToken
+		]);
 	}
   
    
 	public function login(){ 
 		if(Auth::attempt(['email' => request('email'), 'password' => request('password')])){ 
-		   $user = Auth::user(); 
-		   dd();
-		   $success['token'] =  $user->createToken('vueravelmarkettoken')-> accessToken; 
-		    return response()->json(['success' => $success], $this-> successStatus); 
+		   $user = Auth::user();
+		    return response()->success(Response::HTTP_ACCEPTED, Message::SUCCESSFULL_AUTH, [
+		   		'username' => $user->username,
+				'firstname' => $user->firstname,
+				'lastname' => $user->lastname,
+				'token' => $user->createToken('vueravelmarkettoken')->accessToken
+			]); 
 		}
 		else{
-			return response()->json(['error'=>'Unauthorised'], Response::HTTP_UNAUTHORIZED); 
+			return response()->error(Response::HTTP_UNAUTHORIZED, Message::CREDENTIALS_ERROR, null);
 		} 
 	}
 	  
 	public function getProfile() {
 		$user = Auth::user();
-		return response()->json(['data' => new ProfileResource($user)], Response::HTTP_OK); 
+		return response()->success(Response::HTTP_ACCEPTED, null, (new ProfileResource($user))->hide(['id'])); 
 	}
 } 

@@ -3,9 +3,12 @@
 use Illuminate\Support\Str;
 
 
-if (env('DATABASE_URL')){
-    $DATABASE_URL=parse_url(env('DATABASE_URL'));
-}
+    if (env('DATABASE_URL')){
+        $DATABASE_URL=parse_url(env('DATABASE_URL'));
+    }
+    else{
+        $DATABASE_URL= null;
+    }
 
 return [
 
@@ -76,11 +79,11 @@ return [
             //'database' => env('DB_DATABASE', 'forge'),
             //'username' => env('DB_USERNAME', 'forge'),
             //'password' => env('DB_PASSWORD', ''),
-            'host' => $DATABASE_URL["host"],
-            'port' => $DATABASE_URL["port"],
-            'database' => ltrim($DATABASE_URL["path"], "/"),
-            'username' => $DATABASE_URL["user"],
-            'password' => $DATABASE_URL["pass"],
+            'host' => $DATABASE_URL ? $DATABASE_URL["host"] : env('DB_HOST'),
+            'port' => $DATABASE_URL ?$DATABASE_URL["port"] : env('DB_PORT'),
+            'database' => $DATABASE_URL ? ltrim($DATABASE_URL["path"], "/"): env('DB_DATBASE'),
+            'username' => $DATABASE_URL ? $DATABASE_URL["user"] : env('DB_USERNAME'),
+            'password' => $DATABASE_URL ? $DATABASE_URL["pass"] : env('DB_PASSWORD'),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
