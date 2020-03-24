@@ -153,3 +153,5 @@ module.exports = __webpack_require__(/*! /var/www/html/vueravelmarket/resources/
 /***/ })
 
 },[[0,"/js/manifest","/js/vendor"]]]);
+
+// var tell= document.getElementByClassName('hey');
