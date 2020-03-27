@@ -9,12 +9,12 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <link src="{{ mix('css/app.css') }}">
+        <link src="{{ mix('bulma/bulma.css') }}">
     </head>
     <body>
 
     <div id="app">
-        <!-- Vue app goes here -->
+        
     </div>
 
     <script src="{{ mix('js/manifest.js') }}"></script>

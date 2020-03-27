@@ -4,7 +4,7 @@
  * application frontend using useful Laravel and JavaScript libraries.
  */
 import Vue from 'vue';
-import App from './views/App';
+import App from './views/App.vue';
 
 Vue.config.productionTip = false;
 
