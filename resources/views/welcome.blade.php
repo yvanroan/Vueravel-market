@@ -9,8 +9,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"/>
 
-        <link src="{{ URL::asset('css/app.css') }}" rel= "stylesheet" type="text/css"/>
-        <link src="{{ URL::asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link src="{{ mix('css/app.css') }}" rel= "stylesheet" type="text/css"/>
+        <link src="{{ mix('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
         
     </head>
     <!-- <body>
