@@ -9,8 +9,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"/>
 
-        <link src="{{ mix('css/app.css') }}" rel= "stylesheet" type="text/css"/>
-        <link src="{{ mix('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('css/app.css') }}" rel= "stylesheet" type="text/css"/>
+        <link href="{{ asset('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
+        <link href="{{ asset('bulma/bulma.css') }}" rel="stylesheet" type="text/css">
         
     </head>
     <!-- <body>
@@ -68,10 +69,10 @@
                 <p class="control has-icons-left has-icons-right">
                   <input class="input is-medium" type="email" placeholder="Email">
                   <span class="icon is-medium is-left">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fa fa-envelope"></i>
                   </span>
                   <span class="icon is-medium is-right">
-                    <i class="fas fa-check"></i>
+                    <i class="fa fa-check"></i>
                   </span>
                 </p>
               </div>
@@ -80,7 +81,7 @@
                 <p class="control has-icons-left">
                   <input class="input is-medium" type="password" placeholder="Password">
                   <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
+                    <i class="fa fa-lock"></i>
                   </span>
                 </p>
               </div>
@@ -92,9 +93,9 @@
               </div>
               <button class="button is-block is-info is-large is-fullwidth">Login</button><br>
               <p class="subtitle is-5">Login using Social Media</p>
-              <button class="facebook-button button is-medium"><i class="fab fa-facebook-f"></i></button>
-              <button class="twitter-button button is-medium"><i class="fab fa-twitter"></i></button>
-              <button class="google-button button is-medium"><i class="fab fa-google-plus-g"></i></button>
+              <button class="facebook-button button is-medium"><i class="fa fa-facebook-f"></i></button>
+              <button class="twitter-button button is-medium"><i class="fa fa-twitter"></i></button>
+              <button class="google-button button is-medium"><i class="fa fa-google-plus"></i></button>
             </form>
           </div>
           <p class="has-text-grey">
