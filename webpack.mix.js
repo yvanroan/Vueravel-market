@@ -50,6 +50,11 @@ mix
     ]
   }).sourceMaps();
 
+  //done by me
+  mix.version(["public/bulma/bulma.css"]);
+  mix.version(["public/font-awesome/css/font-awesome.min.css"]);
+  //
+
 if (mix.inProduction()) {
   mix.version();
   mix.disableNotifications();

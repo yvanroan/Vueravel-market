@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-div{display:-webkit-box;display:flex}
-=======
-/*div{display:-webkit-box;display:flex}*/
 /*! bulma.io v0.8.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -7118,5 +7114,3 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
-
->>>>>>> 4601c8c26474c6c545f694f0fa14adfdb6fa944f
