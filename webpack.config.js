@@ -10,9 +10,11 @@ function resolve(dir) {
   );
 }
 
+
+
 module.exports = {
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['*','.js', '.vue', '.json'],
     alias: {
       vue$: 'vue/dist/vue.esm.js',
       '@': path.join(__dirname, '/resources/js'),
@@ -37,7 +39,7 @@ module.exports = {
         options: {
           symbolId: 'icon-[name]',
         },
-      }    
+      },    
     ],
   },
   plugins: [

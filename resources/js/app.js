@@ -4,12 +4,17 @@
  * application frontend using useful Laravel and JavaScript libraries.
  */
 import Vue from 'vue';
+import store from './store/index';
 import App from './views/App.vue';
+import router from '@/router';
 
 Vue.config.productionTip = false;
+// Vue.prototype.$axios = axios;
 
 new Vue({
-	el: '#app',
+	el: '#start',
+	router,
+	store,
 	render: h => h(App),
 });
 

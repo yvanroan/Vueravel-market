@@ -9,11 +9,13 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
-        <link src="{{ asset('bulma/bulma.css') }}">
+        <link href="{{ mix('font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
+
+        <link href="{{ mix('bulma/bulma.css') }}" rel="stylesheet" type="text/css">
     </head>
     <body>
 
-    <div id="app">
+    <div id="start">
         
     </div>
 

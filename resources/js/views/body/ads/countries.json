@@ -1,0 +1,227 @@
+[
+	{
+		"id": 1,
+		"name":"Algeria"
+	},
+	{
+		"id": 2,
+		"name":"Angola"
+	},
+	{
+		"id": 3,
+		"name":"Benin"
+	},
+	{
+		"id":4,
+		"name": "Botswana"
+	},
+	{
+		"id": 5,
+		"name": "Burkina Faso"
+	},
+	{
+		"id": 6,
+		"name":"Burundi"
+	},
+	{
+		"id": 7,
+		"name":"Cameroon"
+	},
+	{
+		"id":8,
+		"name":"Cape Verde"
+	},
+	{
+		"id": 9,
+		"name": "Central African Republic"
+	},
+	{
+		"id": 10,
+		"name": "Chad"
+	},
+	{
+		"id": 11,
+		"name": "Comoros"
+	},
+	{
+		"id": 12,
+		"name":"Republic of the Congo "
+	},
+	{
+		"id": 13,
+		"name": "Democratic Republic of the Congo "
+	},
+	{
+		"id": 14,
+		"name":"Côte d'Ivoire"
+	},
+	{
+		"id": 15,
+		"name": "Djibouti"
+	},
+	{
+		"id": 16,
+		"name":"Egypt"
+	},
+	{
+		"id": 17,
+		"name": "Equatorial Guinea"
+	},
+	{
+		"id": 18,
+		"name":"Eritrea"
+	},
+	{
+		"id": 19,
+		"name":"Ethiopia"
+	},
+	{
+		"id": 20,
+		"name":"Gabon"
+	},
+	{
+		"id": 21,
+		"name":"Gambia"
+	},
+	{
+		"id": 22,
+		"name":"Ghana"
+	},
+	{
+		"id":23,
+		"name":"Guinea"
+	},
+	{
+		"id":24,
+		"name": "Guinea-Bissau"
+	},
+	{
+		"id": 25,
+		"name": "Kenya"
+	},
+	{
+		"id": 26,
+		"name": "Lesotho"
+	},
+	{
+		"id": 27,
+		"name":"Liberia"
+	},
+	{
+		"id": 28,
+		"name": "Libya"
+	},
+	{
+		"id": 29,
+		"name": "Madagascar"
+	},
+	{
+		"id": 30,
+		"name": "Malawi"
+	},
+	{
+		"id": 31,
+		"name":"Mali"
+	},
+	{
+		"id": 32,
+		"name": "Mauritania"
+	},
+	{
+		"id":33,
+		"name":"Mauritius"
+	},
+	{
+		"id": 34,
+		"name":"Mayotte"
+	},
+	{
+		"id": 35,
+		"name":"Morocco"
+	},
+	{
+		"id": 36,
+		"name":"Mozambique"
+	},
+	{
+		"id":37,
+		"name": "Namibia"
+	},
+	{
+		"id": 38,
+		"name":"Niger"
+	},
+	{
+		"id": 39,
+		"name": "Nigeria"
+	},
+	{
+		"id": 40,
+		"name": "Réunion"
+	},
+	{
+		"id":41,
+		"name": "Rwanda"
+	},
+	{
+		"id":42,
+		"name": "Saint Helena"
+	},
+	{
+		"id":43,
+		"name": "São Tomé and Príncipe"
+	},
+	{
+		"id": 44,
+		"name": "Senegal"
+	},
+	{
+		"id": 45,
+		"name": "Seychelles"
+	},
+	{
+		"id": 46,
+		"name":"Sierra Leone"
+	},
+	{
+		"id": 47,
+		"name":"Somalia"
+	},
+	{
+		"id":48,
+		"name":"South Africa"
+	},
+	{
+		"id": 49,
+		"name":"Sudan"
+	},
+	{
+		"id": 50,
+		"name":"Swaziland"
+	},
+	{
+		"id": 51,
+		"name":"Tanzania"
+	},
+	{
+		"id": 52,
+		"name":"Togo"
+	},
+	{
+		"id": 53,
+		"name":"Tunisia"
+	},
+	{
+		"id": 54,
+		"name":"Uganda"
+	},
+	{
+		"id": 55,
+		"name": "Zambia"
+	},
+	{
+		"id": 56,
+		"name": "Zimbabwe"
+	}
+]
+

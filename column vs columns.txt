@@ -1,0 +1,1 @@
+the class "column" will not behave well if it has to arrange div elements. For this purpose, the class "columns" will be better. But it will be better to use "column" if you are not using grouping tag.
