@@ -1,19 +1,32 @@
 <template>
 	<div class="col4 row">
-			<div class="f-t col16 -pbm" style="color: white">RETROUVEZ-NOUS SUR</div>
+			<div class="f-t col16 -pbm"><strong style="color: white">RETROUVEZ-NOUS SUR</strong></div>
 			<div class="col16 -phn -fs0">
 				<a href="https://www.google.ca" title="Facebook Jumia Maroc" class="ic-link -pas" target="_blank" rel="noopener">
 					
-					<img href="https://www.jumia.ma/assets_he/images/i-icons.f5d753f5.svg#soc-facebook" width="26" height="26"/>
+					<i class="fa fa-pinterest" aria-hidden="true"></i>
 					
 				</a>
-				<a href="https://www.google.ca" title="Twitter Jumia Maroc" class="ic-link -pas" target="_blank" rel="noopener">
-					<img href="https://www.jumia.ma/assets_he/images/i-icons.f5d753f5.svg#soc-twitter" width="26" height="26">
+				<a href="https://www.google.ca"  title="Twitter Jumia Maroc" class="ic-link -pas" target="_blank" rel="noopener">
+					<i class="fa fa-instagram" aria-hidden="true"></i>
+				</a>
+				<a href="https://www.google.ca" title="Facebook Jumia Maroc" class="ic-link -pas" target="_blank" rel="noopener">
+					
+					<i class="fa fa-facebook" aria-hidden="true"></i>
+					
+				</a>
+				<a href="https://www.google.ca"  title="Twitter Jumia Maroc" class="ic-link -pas" target="_blank" rel="noopener">
+					<i class="fa fa-twitter" aria-hidden="true"></i>
 				</a>
 			</div>
 		</div>
 </template>
-
+<ul>
+					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				</ul>
 <script>
 	export default{
 		name: "Follow",

@@ -1,7 +1,7 @@
 <template>
 		<div style="margin-top:50px;display:flex;padding-top:30px;">
 			<div >
-					<div class="f-t -pbs"><h2 style="color: white">Nouveau sur Jumia ?</h2></div>
+					<div class="f-t -pbs"><h2 style="color: white">Nouveau sur BOOBA ?</h2></div>
 					<h3 style="color:white">Inscrivez-vous à nos communications pour recevoir nos meilleures offres!</h3>
 			</div>
 			<div style="margin-left:150px">
